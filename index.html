@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ariadna Gómez</title>
+    <link rel="icon" type="imatges/png" sizes="16x16" href="/imatges/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif|PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estil.css">
+    <link rel="stylesheet" href="font.css">
+    
+
+    <script src="JS/jquery.js"></script>
+    <script src="JS/mediaelement-and-player.js"></script>
+    <link href="css/mediaelementplayer.css" rel="stylesheet">
+
+
+    <!--Plugins-->
+    <script src="Plugins/skip-back-i18n.js"></script>
+    <script src="Plugins/skip-back.js"></script>
+    <link href="Plugins/skip-back.css" rel="stylesheet">
+
+    <script src="Plugins/jump-forward.js"></script>
+    <script src="Plugins/jump-forward.css"></script>
+    <script src="Plugins/jump-forward-i18n.js"></script>
+
+
+    <script src="Plugins/speed-i18n.js"></script>
+    <script src="Plugins/speed.css"></script>
+    <script src="Plugins/speed.js"></script>
+
+</head>
+
+
+<style>
+    .mySlides{
+        display:none;
+    }    
+    .projectes{
+        display: none;
+        
+    }
+    .videoreel{
+        display: none;
+    }
+    .curriculum{
+        display: none;
+    }
+    .contacte{
+        display: none;
+    }
+
+</style>
+
+<body>
+
+        <div class="background">
+
+        <div class="wrapper">
+
+            <div class="nav">
+                <a class="a active" href="#">Inici</a>
+                <a class="b" href="#">Curriculum</a>
+                <a class="c" href="#">Projectes</a>
+                <a class="d" href="#">Video Reel</a>
+                <a class="e" href="#">Contacte</a>
+            </div>
+
+            <div class="content">
+                <div class="inici">
+                    <h1>Sóc l'Ariadna Gómez</h1>
+                    <h3>Il·lustradora 2d</h3>
+
+
+                    <div id="text-presentacio">
+                        <p>Em presento, sóc l'Ariadna Gómez. Em defineixo com a una persona curiosa, treballadora, i molt reflexiva. Dins d'aquest món, fins al moment em decanto pel <b>disseny</b>, la <b>il·lustració</b>, el <b>modelatge</b> i l'<b>animació</b>. M'agrada molt experimentar amb les idees que em surgeixen i les eines de les quals disposo. Estic en procés d'ampliar els meus coneixaments. De fet això és algo que mai cambiarà, ja que sempre hi ha algo més per aprendre. En el moment en que això deixi de ser així és que algo està fallant. Actualment estic cursant un grau superior d'animacions 3D, jocs i entorns interactius a <b>Vic</b>. Abans d'això vaig fer el batxillerat científic a Sant Fruitós de Bages, si, té molt a veure ja ho sé. Possiblement no em coneixeu, però us convido a que li dongueu un cop d'ull al meu portfoli, potser hi trobeu algo interessant. </p>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="curriculum">
+
+                    <div class="contenidor-text1">
+                        <div class="contenidor-text">
+                            <h2>Dades personals</h2>
+                            <br>
+                            <p><strong>Nom: </strong>Ariadna Gómez López</p>
+                            <hr>
+                            <p><strong>Adreça: </strong>C/ Jaume Balmes nº70, 08272. Localitat: Sant Fruitós de Bages (Manresa)</p>
+                        </div>
+                        <div class="contenidor-text">
+                            <h2>Formació acadèmica</h2>
+                            <br>
+                            <p><strong>2018 - Actualitat.</strong> CFGS Animació 3D, Jocs i Entorns Interactius. TEKNÓS. Centre de Formació en
+                                Tecnologia i comunicació UVIC i UVIC-UCC</p>
+                            <hr>
+                            <p><strong>2015 - 2017.</strong> Batxillerat Científic. INS Gerbert d'Aurillac, St. Fruitós de Bages</p>
+                            <hr>
+                            <p><strong>2011 - 2014.</strong> ESO. INS Gerbert d'Aurillac, St. Fruitós de Bages</p>
+                        </div>
+                        <div class="contenidor-text">
+                            <h2>Experiència Laboral</h2>
+                            <br>
+                            <p><strong>2018 - Juliol i Agost</strong>. Texpol (manipulats) , Manresa</p>
+                            <hr>
+                            <p><strong>2015 - Abril.</strong> Pràctiques en les oficines a la benzinera Petro Pintó, St. Fruitós de Bages</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectes">
+
+                    <div class="container-display">
+                        <img class="mySlides" src="imatges/foto1.png" style="width:100%">
+                        <img class="mySlides" src="imatges/entorn%202.jpg" style="width:100%">
+                        <img class="mySlides" src="imatges/entorn%203.jpg" style="width:100%">
+                        <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+
+                    </div>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            if (n > x.length) {
+                                slideIndex = 1
+                            }
+
+                            if (n < 1) {
+                                slideIndex = x.length
+                            }
+
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+
+                            x[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
+
+
+
+
+
+                </div>
+
+                <div class="videoreel">
+                    <div class="wrapper">
+                        <video controls width="100%" height="420" poster="x">
+                            <source src="video/reel%20ari.mp4" type="video/mp4">
+
+                        </video>
+
+
+                    </div>
+                    
+                     </div>
+                     
+                     
+                     
+                     <div class="contacte">
+    <p>CONTACT US</p>
+    
+    <div class="login">
+      <input type="text" placeholder="Your Name" class="input">
+      <input type="text" placeholder="Your Email Address" class="input">
+    </div>
+    
+    <div class="subject">
+      <input type="text" placeholder="Subject" class="input">
+    </div>
+    
+    <div class="msg">
+      <textarea  class="area" placeholder="Leave a Message"></textarea>
+    </div>
+    
+    <div class="btn">Send Message</div>
+  </div>
+
+                    
+        
+                    
+
+                    <script>
+                        $('video').mediaelementplayer({
+                            features: ['playpause', 'progress', 'tracks', 'volume', 'skipback', 'jumpforward', 'fullscreen'],
+                            skipBackInterval: 5,
+                            jumpForwardInterval: 5,
+
+                        });
+
+                    </script>
+
+
+                </div>
+
+               
+                <div class="social-bar">
+                    <a href="https://aboutme.google.com/u/3/?referer=gplus&pageId=none" class="icon icon-google-plus2" target="_blank"></a>
+                    <a href="https://www.facebook.com/ariadna.gomezlopez/photos?lst=100003096843092%3A100003096843092%3A1551956981" class="icon icon-facebook2" target="_blank"></a>
+                    <a href="https://www.instagram.com/ariaddna_17/" class="icon icon-instagram" target="_blank"></a>
+                    <a href="https://twitter.com/bluntyg1" class="icon icon-twitter" target="_blank"></a>
+                </div>
+
+                <div class="footer">
+                    <p><b>Ariadna Gómez · Tlf: 695169021 · ariaddna17@gmail.com</b> </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('a').click(function() {
+                    //alert("i am click");
+                    var selected = $(this);
+                    $('a').removeClass('active');
+                    $(selected).addClass('active');
+                });
+
+                var $a = $('.a'),
+                    $b = $('.b'),
+                    $c = $('.c'),
+                    $d = $('.d'),
+                     $e = $('.e'),
+                    $f = $('.f'),
+                    $inici = $('.inici'),
+                    $curriculum = $('.curriculum'),
+                    $projectes = $('.projectes'),
+                    $videoreel = $('.videoreel'),
+                    $contacte = $('.contacte'),
+                    $extra = $('.extra');
+                $a.click(function() {
+                    $inici.fadeIn();
+                    $curriculum.fadeOut();
+                    $projectes.fadeOut();
+                    $videoreel.fadeOut();
+                    $contacte.fadeOut();
+                    $extra.fadeOut();
+                });
+
+                $b.click(function() {
+                    $inici.fadeOut();
+                    $curriculum.fadeIn();
+                    $projectes.fadeOut();
+                    $videoreel.fadeOut();
+                    $contacte.fadeOut();
+                     $extra.fadeOut();
+                });
+                $c.click(function() {
+                    $projectes.fadeIn();
+                    $inici.fadeOut();
+                    $curriculum.fadeOut();
+                    $videoreel.fadeOut();
+                   $contacte.fadeOut();
+                     $extra.fadeOut();
+                });
+                $d.click(function() {
+                    $projectes.fadeOut();
+                    $inici.fadeOut();
+                    $curriculum.fadeOut();
+                    $videoreel.fadeIn();
+                   $contacte.fadeOut();
+                     $extra.fadeOut();
+                });
+               
+                $e.click(function() {
+                    $projectes.fadeOut();
+                    $inici.fadeOut();
+                    $curriculum.fadeOut();
+                    $videoreel.fadeOut();
+                   $contacte.fadeIn();
+                     $extra.fadeOut();
+                });
+                
+                $f.click(function() {
+                    $projectes.fadeOut();
+                    $inici.fadeOut();
+                    $curriculum.fadeOut();
+                    $videoreel.fadeOut();
+                   $contacte.fadeOut();
+                     $extra.fadeIn();
+                });
+                
+
+
+            });
+
+        </script>
+ 
+ <script>
+    $(".btn").click(function(){
+  $(".input, .area").val("");
+});
+    </script>
+
+ 
+
+
+</body>
+
+</html>
