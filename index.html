@@ -38,6 +38,10 @@
     .mySlides{
         display:none;
     }    
+    
+      .curriculum{
+        display: none;
+    }
     .projectes{
         display: none;
         
@@ -45,9 +49,7 @@
     .videoreel{
         display: none;
     }
-    .curriculum{
-        display: none;
-    }
+  
     .contacte{
         display: none;
     }
@@ -62,7 +64,7 @@
 
             <div class="nav">
                 <a class="a active" href="#">Inici</a>
-                <a class="b" href="#">Curriculum</a>
+                <a class="b" href="#">Currículum</a>
                 <a class="c" href="#">Projectes</a>
                 <a class="d" href="#">Video Reel</a>
                 <a class="e" href="#">Contacte</a>
@@ -241,20 +243,20 @@
                     $c = $('.c'),
                     $d = $('.d'),
                      $e = $('.e'),
-                    $f = $('.f'),
+                
                     $inici = $('.inici'),
-                    $curriculum = $('.curriculum'),
+                    $hh = $('.curriculum'),
                     $projectes = $('.projectes'),
                     $videoreel = $('.videoreel'),
-                    $contacte = $('.contacte'),
-                    $extra = $('.extra');
+                    $contacte = $('.contacte');
+                    
                 $a.click(function() {
                     $inici.fadeIn();
                     $curriculum.fadeOut();
                     $projectes.fadeOut();
                     $videoreel.fadeOut();
                     $contacte.fadeOut();
-                    $extra.fadeOut();
+                 
                 });
 
                 $b.click(function() {
@@ -263,7 +265,7 @@
                     $projectes.fadeOut();
                     $videoreel.fadeOut();
                     $contacte.fadeOut();
-                     $extra.fadeOut();
+                    
                 });
                 $c.click(function() {
                     $projectes.fadeIn();
@@ -271,7 +273,7 @@
                     $curriculum.fadeOut();
                     $videoreel.fadeOut();
                    $contacte.fadeOut();
-                     $extra.fadeOut();
+                    
                 });
                 $d.click(function() {
                     $projectes.fadeOut();
@@ -279,7 +281,7 @@
                     $curriculum.fadeOut();
                     $videoreel.fadeIn();
                    $contacte.fadeOut();
-                     $extra.fadeOut();
+                    
                 });
                
                 $e.click(function() {
@@ -288,17 +290,10 @@
                     $curriculum.fadeOut();
                     $videoreel.fadeOut();
                    $contacte.fadeIn();
-                     $extra.fadeOut();
+                    
                 });
                 
-                $f.click(function() {
-                    $projectes.fadeOut();
-                    $inici.fadeOut();
-                    $curriculum.fadeOut();
-                    $videoreel.fadeOut();
-                   $contacte.fadeOut();
-                     $extra.fadeIn();
-                });
+          
                 
 
 
