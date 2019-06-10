@@ -126,22 +126,77 @@ a.active,
     line-height: 32px;
     padding: 20px;
     font-family: 'Noto Serif', serif;
-   
+    background-color: transparent;
+     
 }
 
 
-.curriculum {
-    position: absolute;
+.error {
+   
     right: 0;
     top: 10px;
     color: black;
     font-family: 'Noto Serif', serif;
-    padding: 0 10px;
+    padding-bottom: 10%;
     padding-top: 5%;
-    padding-left: 35%;
-    padding-right: 10%;
+    padding-left: 10%;
+    padding-right: 1%;
+    position: relative;
     display: none;
 }
+
+.container-display {
+    position: relative;
+    width: 41%;
+    /*indicador*/
+    margin: 5px;
+ 
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.boton-slider {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.boton-slider:hover {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+}
+
+.fletxaDreta-slider {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    color: white;
+    left:38%;
+}
+
+.fletxaEsquerra-slider {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contenidor-text p {
     font-size: 19px;
@@ -186,7 +241,7 @@ p{
   letter-spacing: 1px;  
   font-size: 20px;
   margin-bottom: 20px;
-  color: #486255;
+  color: black;
 }
 .input,
 .msg .area{
@@ -248,51 +303,7 @@ p{
 }
 
 
-/*Classes Slider*/
-.projectes {
-    width: 75%;
-    margin: auto;
-    border: 3px solid khaki;
-    box-sizing: border-box;
-    text-align: center;
-}
 
-.container-display {
-    position: relative;
-    width: 98%;
-    /*indicador*/
-    margin: 5px;
-    border: 1px dashed;
-}
-
-.boton-slider {
-    width: 30px;
-    height: 30px;
-    background-color: black;
-}
-
-.boton-slider:hover {
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    color: black;
-}
-
-.fletxaDreta-slider {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    color: white;
-}
-
-.fletxaEsquerra-slider {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    color: white;
-}
 
 
 
